@@ -21,7 +21,9 @@
 
 .modal-text {
     color: white;
+    font-family: cursive;
 }
+
 *{
     text-decoration: none;
 }
@@ -61,4 +63,33 @@ button{
 .division{
     flex: 1;
     display: flex;
+}
+
+.score {
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 30%;
+    height: 30%;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.score-card {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 10px;
+    border-radius: 1em;
+    text-align: center;
+    width: 30%;
+    max-width: 100px;
+    margin: auto;
+}
+
+.score-text {
+    color: white;
+    font-family: cursive;
+    font-size: 100%;
 }
