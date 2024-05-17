@@ -65,6 +65,11 @@ button{
     font-family: cursive;
 }
 
+.modal-button{
+    width: auto;
+    height: auto;
+}
+
 .score {
     display: flex;
     top: 0;
