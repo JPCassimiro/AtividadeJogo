@@ -1,0 +1,40 @@
+*{
+    text-decoration: none;
+}
+
+#main_title{
+    text-align: center;
+    width: 100%;
+}
+#main_buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+}
+.division{
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    gap: 3.5rem;
+    margin-right: 1.75rem;
+    margin-left: 1.75rem;
+}
+.left{
+    align-items: flex-end;
+}
+.right{
+    align-items: flex-start;
+}
+button{
+    border-radius: 0;
+    border-style: none;
+    width: 40vw;
+    height: 40vh;
+    
+}
+
+.division{
+    flex: 1;
+    display: flex;
+}
