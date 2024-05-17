@@ -19,7 +19,7 @@
     margin: auto;
 }
 
-.modal-text {
+.modal-text {   
     color: white;
 }
 *{
@@ -61,4 +61,17 @@ button{
 .division{
     flex: 1;
     display: flex;
+}
+
+#green_bt{
+background-color: #26BD50;
+}
+#yellow_bt{
+background-color: #F4EB0F;
+}
+#red_bt{
+    background-color: #DD3620;
+}
+#blue_bt{
+    background-color: #4757EC;
 }
