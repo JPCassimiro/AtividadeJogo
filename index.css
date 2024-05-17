@@ -1,0 +1,95 @@
+*{
+    text-decoration: none;
+}
+
+#main_title{
+    text-align: center;
+    width: 100%;
+}
+#main_buttons{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100vh;
+}
+.division{
+    flex-direction: column;
+    justify-content: space-between;
+    flex: 1;
+    gap: 3.5rem;
+    margin-right: 1.75rem;
+    margin-left: 1.75rem;
+}
+.left{
+    align-items: flex-end;
+}
+.right{
+    align-items: flex-start;
+}
+button{
+    border-radius: 0;
+    border-style: none;
+    width: 40vw;
+    height: 40vh;
+    
+}
+
+.division{
+    flex: 1;
+    display: flex;
+}
+
+.modal {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-card {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 1em;
+    text-align: center;
+    width: 80%;
+    max-width: 500px;
+    margin: auto;
+}
+
+.modal-text {
+    color: white;
+    font-family: cursive;
+}
+
+.score {
+    display: flex;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    width: 30%;
+    height: 30%;
+    overflow: auto;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.score-card {
+    background-color: rgba(0, 0, 0, 1);
+    padding: 10px;
+    border-radius: 1em;
+    text-align: center;
+    width: 30%;
+    max-width: 100px;
+    margin: auto;
+}
+
+.score-text {
+    color: white;
+    font-family: cursive;
+    font-size: 100%;
+}

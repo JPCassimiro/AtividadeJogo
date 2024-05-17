@@ -1,30 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-br">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Genius</title>
+    <link rel="stylesheet" href="./index.css">
 </head>
 <body>
+    <div class="score">
+        <div class="score-card">
+            <h2 class="score-text">Pontuação: 0</h2>
+        </div>
+    </div>
     <main>
-        <div>
-            <button style="background-color: red">
-                SADLKJJJJJJJJJJJJJJJJJJJJJJJJJJJJASDKJLJLKDSAJKSLADSDKJLSDJKLDSAKJLASDJKLSADJKLSDA
-            </button>
-            <button  style="background-color: yellow">
-                SADLKJJJJJJJJJJJJJJJJJJJJJJJJJJJJASDKJLJLKDSAJKSLADSDKJLSDJKLDSAKJLASDJKLSADJKLSDA
-    
-            </button>
+        <h1 id="main_title">GENIUS</h1>
+        <div id="main_buttons">
+        <div class="division left" >
+            <button id="green_bt" onclick="pressButton(0)"></button>
+            <button id="yellow_bt" onclick="pressButton(1)"></button>
         </div>
-        <div>
-            <button style="background-color: green">
-                SADLKJJJJJJJJJJJJJJJJJJJJJJJJJJJJASDKJLJLKDSAJKSLADSDKJLSDJKLDSAKJLASDJKLSADJKLSDA
-    
-            </button>
-            <button style="background-color: blue">
-                SADLKJJJJJJJJJJJJJJJJJJJJJJJJJJJJASDKJLJLKDSAJKSLADSDKJLSDJKLDSAKJLASDJKLSADJKLSDA
-            </button>
+        <div class="division right">
+            <button id="red_bt" onclick="pressButton(2)"></button>
+            <button id="blue_bt" onclick="pressButton(3)"></button>
         </div>
+    </div>
     </main>
+    <div class="modal">
+        <div class="modal-card">
+            <h2 class="modal-text">Bem-vindo ao Jogo Genius!</h2>
+            <p class="modal-text">Regras do Jogo:</p>
+            <p class="modal-text">1. Clique na cor indicada na ordem.</p>
+            <p class="modal-text">2. O jogo acaba quando você erra a ordem.</p>
+            <p class="modal-text">Boa sorte!</p>
+            <button id="iniciar-jogo">Iniciar Jogo</button>
+        </div>
+    </div>
 </body>
 </html>
