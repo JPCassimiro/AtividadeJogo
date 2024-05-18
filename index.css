@@ -1,48 +1,42 @@
-.modal {
-    display: flex;
-    position: fixed;
-    z-index: 1;
-    width: 100%;
-    height: 100%;
-    overflow: auto;
-    justify-content: center;
-    align-items: center;
-}
-
-.modal-card {
-    background-color: rgba(0, 0, 0, 0.6);
-    padding: 20px;
-    border-radius: 1em;
-    text-align: center;
-    width: 80%;
-    max-width: 500px;
-    margin: auto;
-}
-
-.modal-text {   
-    color: white;
-}
 *{
     text-decoration: none;
+    padding: 0;
+    margin: 0;
 }
 
+body {
+    background: #222222;
+    background: linear-gradient(90deg, #222222 0%, #0f0f0f 100%);
+}
 #main_title{
-    text-align: center;
+    position: fixed;
+    top: 3rem;
+
+    height: 2rem;
     width: 100%;
+
+    font-family: "Poppins";
+    font-weight: 100;
+    font-size: 4rem;
+    line-height: 2rem;
+    color: #f8f8f8;
+
+    text-align: center;
 }
 #main_buttons{
     display: flex;
     flex-direction: row;
     align-items: center;
-    height: 100vh;
+    height: 70vh;
 }
 .division{
+    padding-top: 35svh;
     flex-direction: column;
     justify-content: space-between;
     flex: 1;
-    gap: 3.5rem;
-    margin-right: 1.75rem;
-    margin-left: 1.75rem;
+    gap: 2.5rem;
+    margin-right: 1.25rem;
+    margin-left: 1.25rem;
 }
 .left{
     align-items: flex-end;
@@ -53,9 +47,9 @@
 button{
     border-radius: 0;
     border-style: none;
-    width: 40vw;
-    height: 40vh;
-    
+    width: 30vw;
+    height: 30vh;
+    border-radius: 0.5rem;
 }
 
 .division{
@@ -64,7 +58,7 @@ button{
 }
 
 .modal {
-    display: flex;
+    display: none;
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -108,6 +102,9 @@ button{
 
 
 .score-card {
+    position: fixed;
+    top: 1rem;
+
     background-color: rgba(0, 0, 0, 1);
     padding: 10px;
     border-radius: 1em;
@@ -117,7 +114,7 @@ button{
     margin: auto;
 }
 
-.score-text {
+#score-text {
     color: white;
     font-family: cursive;
     font-size: 100%;
@@ -134,4 +131,112 @@ background-color: #F4EB0F;
 }
 #blue_bt{
     background-color: #4757EC;
+}
+
+#game-over-screen {
+    position: fixed;
+
+    opacity: 0;
+    top: 0;
+    right: 0;
+    z-index: 4;
+
+    width: 100vw;
+    height: 100vh;
+
+    display: none;
+    align-items: center;
+    justify-content: center;
+
+    background-color: #2d2d2ddd;
+
+    font-family: "Poppins";
+    flex-direction: column;
+
+}
+
+#game-over-screen h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    color: #f8f8f8;
+}
+
+#game-over-screen h3 {
+    opacity: 0;
+    font-weight: 200;
+    font-size: 1.5rem;
+    color: #f8f8f8;
+}
+
+.js-container {
+    pointer-events: none;
+    position: fixed;
+    z-index: 5;
+
+    top: 0;
+    left: 0;
+
+    width: 100vw;
+    height: 100vh;
+
+    perspective: 700px;
+    overflow: hidden;
+}
+
+.confetti--animation-slow {
+    animation: confetti-slow 2.25s linear 1 forwards;
+}
+.confetti--animation-medium {
+    animation: confetti-medium 1.75s linear 1 forwards;
+}
+.confetti--animation-fast {
+    animation: confetti-fast 1.25s linear 1 forwards;
+}
+
+@keyframes confetti-fadeout{
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.7;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes confetti-slow {
+  0% {
+    transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+  }
+  100% {
+    transform: translate3d(25px, 105vh, 0) rotateX(360deg) rotateY(180deg);
+  }
+}
+
+@keyframes confetti-medium {
+    0% {
+      transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+    100% {
+      transform: translate3d(100px, 105vh, 0) rotateX(100deg) rotateY(360deg);
+    }
+  }
+  @keyframes confetti-fast {
+    0% {
+      transform: translate3d(0, 0, 0) rotateX(0) rotateY(0);
+    }
+    100% {
+      transform: translate3d(-50px, 105vh, 0) rotateX(10deg) rotateY(250deg);
+    }
+  }
+
+
+
+@keyframes gameover {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
